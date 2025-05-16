@@ -58,9 +58,9 @@ nav a:hover {
   background-color: #641b7b;
 }
 
-/* Main content area pushed to the right */
+
 main {
-  margin-left: 220px;
+  margin-right: 400px;
   animation: fadeIn 1s ease-in;
 }
 
