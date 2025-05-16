@@ -10,12 +10,23 @@ document.getElementById("calculateBtn").addEventListener("click", () => {
 // === SVG Drawing ===
 document.getElementById("drawSVGBtn").addEventListener("click", () => {
   const svg = document.getElementById("demoSVG");
-  svg.innerHTML = ""; // Clear previous
+  svg.innerHTML = ""; // Clear previous drawing
+
+  const svgWidth = svg.clientWidth;
+  const svgHeight = svg.clientHeight;
+
+  const radius = Math.floor(Math.random() * 50) + 10; // Radius between 10 and 60
+  const cx = Math.floor(Math.random() * (svgWidth - 2 * radius)) + radius;
+  const cy = Math.floor(Math.random() * (svgHeight - 2 * radius)) + radius;
+
+  const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 70%, 60%)`;
+
   const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-  circle.setAttribute("cx", 100);
-  circle.setAttribute("cy", 100);
-  circle.setAttribute("r", 50);
-  circle.setAttribute("fill", "blue");
+  circle.setAttribute("cx", cx);
+  circle.setAttribute("cy", cy);
+  circle.setAttribute("r", radius);
+  circle.setAttribute("fill", randomColor);
+
   svg.appendChild(circle);
 });
 
