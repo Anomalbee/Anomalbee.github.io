@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Demo</title>
+  <link rel="stylesheet" href="basestyle.css" />
+  <script defer src="jsdemo.js"></script>
+</head>
+<body class="no-background">
+  <nav>...</nav>
+  <main>
+    <h1>JavaScript Demo Showcase</h1>
+
+    <!-- Form for DOM + Calculation demo -->
+    <section id="calc-section">
+      <h2>Simple Calculator</h2>
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" />
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" />
+      <button id="calculateBtn">Add</button>
+      <p>Result: <span id="result"></span></p>
+    </section>
+
+    <!-- SVG Drawing -->
+    <section id="svg-section">
+      <h2>SVG Demo</h2>
+      <button id="drawSVGBtn">Draw Circle</button>
+      <svg id="demoSVG" width="200" height="200"></svg>
+    </section>
+
+    <!-- JSON API Section -->
+    <section id="api-section">
+      <h2>External API Data (Joke)</h2>
+      <button id="fetchJoke">Get Joke</button>
+      <p id="jokeText"></p>
+    </section>
+  </main>
+</body>
+</html>
