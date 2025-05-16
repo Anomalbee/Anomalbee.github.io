@@ -38,3 +38,13 @@ document.getElementById("drawSVGBtn").addEventListener("click", () => {
 });
 
 // Internal JSON 
+const internalHobbies = {
+  Hobbies: ["Cooking", "Reading", "TCGs", "Collecting Plushies","Video Games","Watching Anime"]
+};
+
+internalHobbies.Hobbies.forEach(hobby => {
+  const li = document.createElement("li");
+  li.textContent = hobby;
+  hobbyList.appendChild(li);
+});
+
