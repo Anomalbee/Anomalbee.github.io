@@ -1,0 +1,195 @@
+/* === CSS VARIABLES FOR LIGHT/DARK MODE === */
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #222;
+    --primary-color: #000000;
+    --accent-color: #0077cc;
+    --font-main: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #201a1a;
+      --text-color: #ffffff;
+      --primary-color: #3c5780;
+      --accent-color: #70b1d1;
+    }
+  }
+  
+  /* === BASE STYLES === */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+  
+  /* === NAVIGATION === */
+  nav {
+    background-color: var(--primary-color);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  /* === MAIN CONTENT === */
+  main {
+    padding: 1rem;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* === RESPONSIVE IMAGES === */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* === FLEXBOX EXAMPLE (e.g. #cta section) === */
+  #cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* === GRID EXAMPLE (e.g. .grid-demo class) === */
+  .grid-demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-demo {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* === RESPONSIVE NAVIGATION POSITIONING === */
+  @media (max-width: 767px) {
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    nav {
+      position: sticky;
+      top: 0;
+    }
+  }
+  
+  body {
+  background: var(--bg-color);
+  background-image: url('');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+
+}
+
+body:has(main:has(h1:contains("Demo Showcase"))) {
+  background-image: none; /* remove background on demos.html */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+img[src*="star.bmp"] {
+  display: block;
+  margin: 1rem auto;
+  max-width: 150px;
+}
+
+/* === DARK OVERLAY TO SOFTEN BACKGROUND IMAGE === */
+body:not(.no-background)::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* or whatever opacity you used */
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+main {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* === Make all text white for pages with 'light-text' class === */
+body.light-text main,
+body.light-text header,
+body.light-text header h1,
+body.light-text header p,
+body.light-text main h1,
+body.light-text main h2,
+body.light-text main p,
+body.light-text main a,
+body.light-text main li,
+body.light-text main th,
+body.light-text main td {
+  color: white;
+}
+
+/* === Disable background image for JavaScript demo page === */
+body.no-background {
+  background-image: none !important;
+  background-color: var(--bg-color);
+}
