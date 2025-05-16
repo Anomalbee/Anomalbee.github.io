@@ -1,3 +1,10 @@
+// === External API Fetch ===
+document.getElementById("fetchJoke").addEventListener("click", async () => {
+  const res = await fetch("https://api.chucknorris.io/jokes/random");
+  const data = await res.json();
+  document.getElementById("jokeText").textContent = data.value;
+});
+
 // === DOM & Calculation ===
 const num1 = document.getElementById("num1");
 const num2 = document.getElementById("num2");
@@ -30,9 +37,3 @@ document.getElementById("drawSVGBtn").addEventListener("click", () => {
   svg.appendChild(circle);
 });
 
-// === External API Fetch ===
-document.getElementById("fetchJoke").addEventListener("click", async () => {
-  const res = await fetch("https://api.chucknorris.io/jokes/random");
-  const data = await res.json();
-  document.getElementById("jokeText").textContent = data.value;
-});
