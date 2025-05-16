@@ -68,7 +68,7 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 1rem 0;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 200px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
@@ -122,7 +122,4 @@ img {
     padding: 0.5rem 0;
   }
 
-  main {
-    margin-left: 0;
-  }
 }
