@@ -21,7 +21,7 @@ document.getElementById("drawSVGBtn").addEventListener("click", () => {
 
 // === External API Fetch ===
 document.getElementById("fetchJoke").addEventListener("click", async () => {
-  const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
+  const res = await fetch("https://api.chucknorris.io/jokes/random");
   const data = await res.json();
   document.getElementById("jokeText").textContent = data.value;
 });
