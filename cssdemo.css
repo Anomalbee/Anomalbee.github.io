@@ -59,11 +59,7 @@ nav a:hover {
   background-color: #641b7b;
 }
 
-/* Main content area pushed to the right */
-main {
-  margin-left: 200;
-  animation: fadeIn 1s ease-in;
-}
+
 
 section {
   background-color: rgba(255, 255, 255, 0.8);
@@ -123,4 +119,9 @@ img {
     justify-content: space-around;
     padding: 0.5rem 0;
   }
+}
+/* Main content area pushed to the right */
+main {
+  margin-left: 400;
+  animation: fadeIn 1s ease-in;
 }
