@@ -28,8 +28,8 @@ header h1 {
 nav {
   position: fixed;
   right: 0;
-  bottom:  0;
-  height: 350px;
+  bottom: 0;
+  height: 300px;
   width: 250px;
   background-color: #3b0a45;
   color: white;
