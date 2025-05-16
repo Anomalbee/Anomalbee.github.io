@@ -31,7 +31,7 @@ nav {
   left: 0;
   top: 0;
   height: 100%;
-  width: 100px;
+  width: 200px;
   background-color: #3b0a45;
   color: white;
   padding-top: 2rem;
@@ -61,6 +61,7 @@ nav a:hover {
 
 /* Main content area pushed to the right */
 main {
+  margin-left: 200;
   animation: fadeIn 1s ease-in;
 }
 
@@ -122,5 +123,4 @@ img {
     justify-content: space-around;
     padding: 0.5rem 0;
   }
-
 }
