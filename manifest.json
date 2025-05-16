@@ -1,0 +1,57 @@
+{
+    "name": "Your name",
+    "short_name": "Short name",
+    "icons": [
+        {
+            "src": "icons/web-app-manifest-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/web-app-manifest-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },      
+        {
+            "src": "icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#6f4e37",
+    "background_color": "#6f4e37",
+    "display": "standalone",
+    "id": "index.html",
+    "start_url": "/",
+    "description": "Kitty cafe PWA test. This is a test page to see how easy it is to build a PWA for a kitty site",
+    "shortcuts": [
+        {
+            "name": "Kitty Cafe",
+            "short_name": "Cafe",
+            "description": "See what is on offer in the cafe",
+            "url": "kittycafe.html",
+            "icons": [
+                {
+                    "src": "icons/cafe.jpg",
+                    "sizes": "192x192"
+                } 
+		 ] } ],
+
+    "screenshots": [
+        {
+            "src": "icons/screenshot1.png",
+            "type": "image/png",
+            "sizes": "500x609",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "icons/screenshot2.png",
+            "type": "image/png",
+            "sizes": "405x320",
+            "form_factor": "wide"
+        }
+    ]
+}
