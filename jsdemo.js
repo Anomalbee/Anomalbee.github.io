@@ -37,7 +37,7 @@ document.getElementById("drawSVGBtn").addEventListener("click", () => {
   svg.appendChild(circle);
 });
 
-// Internal JSON Example
+// Internal JSON 
 const internalHobbies = {
   Hobbies: ["Cooking", "Reading", "TCGs", "Collecting Plushies","Video Games","Watching Anime"]
 };
