@@ -6,6 +6,7 @@
 }
 
 body {
+  margin-left: 200px;
   font-family: 'Courier New', Courier, monospace;
   background: linear-gradient(135deg, #ffe29f, #ffa99f);
   color: #222;
@@ -20,6 +21,7 @@ header {
 }
 
 header h1 {
+  margin-left: 200px;
   font-size: 2.5rem;
   color: #3b0a45;
 }
@@ -60,12 +62,13 @@ nav a:hover {
 
 /* Main content area pushed to the right */
 main {
-  margin-left: 400px;
+  margin-left: 200px;
   animation: fadeIn 1s ease-in;
 }
 
 section {
   background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 200px;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 12px;
