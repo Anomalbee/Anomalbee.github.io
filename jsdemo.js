@@ -20,8 +20,8 @@ document.getElementById("drawSVGBtn").addEventListener("click", () => {
 });
 
 // === External API Fetch ===
-document.getElementById("fetchWord").addEventListener("click", async () => {
-  const res = await fetch("https://random-word-api.herokuapp.com/word?number=1");
+document.getElementById("fetchJoke").addEventListener("click", async () => {
+  const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
   const data = await res.json();
-  document.getElementById("word").textContent = data.value;
+  document.getElementById("jokeText").textContent = data.value;
 });
